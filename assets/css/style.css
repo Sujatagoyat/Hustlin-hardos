@@ -288,6 +288,7 @@
     left: 0;
     bottom: 0;
     transition: all 200ms linear;
+    /* margin-bottom: 40px; */
 }
 
 .border-left {
@@ -312,6 +313,16 @@
 }
 .gap-55{
     gap: 55px;
+}
+.gap-11{
+    gap: 11px;
+}
+.max-w-327{
+    max-width: 327px;
+}
+.py-15{
+    padding-top: 13px;
+    padding-bottom: 15px;
 }
 
 
