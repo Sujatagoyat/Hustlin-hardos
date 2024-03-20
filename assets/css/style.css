@@ -363,7 +363,18 @@
 .border_left {
     border-left: 1px solid var(--fc-black);
 }
-
+/* ================================= minting================================= */
+.py-88{
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+.max-w-438{
+    max-width: 438px;
+}
+.py-44{
+    padding-top: 44px;
+    padding-bottom: 47px;
+}
 
 
 
