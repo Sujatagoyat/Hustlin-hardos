@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/perpetua-titling-mt');
 
 * {
     margin: 0;
@@ -71,6 +72,7 @@
 .text-80 {
     font-size: var(--fs-2xl);
 }
+
 .text-157 {
     font-size: var(--fs-xl);
 }
@@ -146,16 +148,23 @@
 
 /* ================ font family========================= */
 .ff-noto {
-    font-family: 'Noto Serif',sans-serif;
+    font-family: 'Noto Serif', sans-serif;
 }
+
 @font-face {
-    font-family:"modernofbcomp" ;
+    font-family: "modernofbcomp";
     src: url(../font/modernofbcomp-semibold-maisfontes.c0b3/modernofbcomp-semibold.otf);
 }
-.ff-mono{
-    font-family:'modernofbcomp',sans-serif ;
+
+.ff-mono {
+    font-family: 'modernofbcomp', sans-serif;
 }
-.cursor-pointer{
+
+.ff-perpetua {
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.cursor-pointer {
     cursor: pointer;
 }
 
@@ -212,7 +221,8 @@
 .bg-clr {
     background: #F7F2F3;
 }
-.bg-img{
+
+.bg-img {
     background-image: url(/assets/images/png/bg-img.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -249,21 +259,26 @@
 .border_bottom {
     border-bottom: 2px solid var(--fc-black);
 }
-.pt-68{
+
+.pt-68 {
     padding-top: 68px;
 }
+
 /* ============================================== breaking news ================================================ */
-.max-w-1140{
-    max-width:1140px;
+.max-w-1140 {
+    max-width: 1140px;
 }
-.py-67{
+
+.py-67 {
     padding-top: 64px;
     padding-bottom: 67px;
 }
+
 /* ========================================== march 1 ======================================================= */
-.max-w-475{
+.max-w-475 {
     max-width: 475px;
 }
+
 .underline::after {
     content: '';
     position: absolute;
@@ -274,18 +289,26 @@
     bottom: 0;
     transition: all 200ms linear;
 }
-.border-left{
+
+.border-left {
     border-left: 2px solid var(--fc-black);
 }
-.border-right{
+
+.border-right {
     border-right: 2px solid var(--fc-black);
 }
-.py-86{
+
+.py-86 {
     padding-top: 86px;
     padding-bottom: 86px;
 }
-.max-w-570{
+
+.max-w-570 {
     max-width: 570px;
+}
+.py-90{
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 
@@ -339,19 +362,20 @@
         z-index: 4;
         transition: all 300ms linear;
     }
+
     .cross span:nth-child(1) {
         transform: rotate(51deg) translateY(26px);
         transition: all 300ms linear;
         position: relative;
         top: -7px;
     }
-    
+
     .cross span:nth-child(2) {
         transform: translateX(-100%);
         opacity: 0;
         transition: 300ms;
     }
-    
+
     .cross span:nth-child(3) {
         transform: rotate(-52deg) translateY(-27px);
         transition: all 300ms linear;
@@ -359,37 +383,43 @@
         top: 0;
     }
 }
- 
+
 @media (min-width:576px) {
     .text-157 {
         font-size: var(--fs-xl);
     }
+
     .lh-188 {
         line-height: 188px;
     }
-   
-} 
+
+}
+
 @media (min-width:768px) {
     .text-157 {
         font-size: var(--fs-2xl);
     }
+
     .text-72 {
         font-size: var(--fs-xl);
     }
+
     .lh-101 {
         line-height: 101px;
     }
 }
+
 @media (min-width:992px) {
     .border_right {
         border-right: 2px solid var(--fc-black);
     }
-    
+
     .border_left {
         border-left: 2px solid var(--fc-black);
     }
+
     .text-157 {
         font-size: var(--fs-3xl);
     }
-   
+
 }
