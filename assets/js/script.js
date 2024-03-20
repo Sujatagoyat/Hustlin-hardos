@@ -9,10 +9,13 @@ menuIcon.addEventListener("click", function () {
 
 // =============== latest slider =============================
 $('.responsive').slick({
-    dots: true,
-    infinite: false,
+    dots:false,
+    infinite: true,
+    autoplay:false,
+    autoplaySpeed:1000,
+    ltr:true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
       {
@@ -21,7 +24,8 @@ $('.responsive').slick({
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false,
+         
         }
       },
       {
