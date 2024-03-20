@@ -307,6 +307,7 @@
 .max-w-570 {
     max-width: 570px;
 }
+/* ========================================= latest tweets ====================================== */
 .py-90{
     padding-top: 90px;
     padding-bottom: 90px;
@@ -314,6 +315,7 @@
 .gap-55{
     gap: 55px;
 }
+/* ======================================= latest slider ========================================== */
 .gap-11{
     gap: 11px;
 }
@@ -324,11 +326,34 @@
     padding-top: 13px;
     padding-bottom: 15px;
 }
+.py-48{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.max-w-327{
+    max-width: 327px;
+}
+.px-26{
+    padding-left: 26px;
+    padding-right: 26px;
+}
+.max-w-283{
+    max-width: 283px;
+}
+.underline-2::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    background: var(--fc-black);
+    left: 0;
+    bottom: 0;
+    transition: all 200ms linear;
+    /* margin-bottom: 40px; */
+}
 
 
-/* .d-block {
-    display: block !important;
-} */
+
 
 
 
