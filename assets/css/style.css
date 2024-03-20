@@ -330,6 +330,13 @@
     padding-top: 48px;
     padding-bottom: 48px;
 }
+.border_left {
+    border-left: 2px solid var(--fc-black);
+}
+
+.border_right {
+    border-right: 2px solid var(--fc-black);
+}
 .max-w-327{
     max-width: 327px;
 }
