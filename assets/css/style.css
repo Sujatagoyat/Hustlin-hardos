@@ -453,6 +453,15 @@
     padding-left: 25px;
 }
 
+/* ======================================== section ============================================ */
+.gap-50 {
+    gap: 50px;
+}
+.py-21{
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
 
 
 
@@ -533,6 +542,9 @@
     .text_center {
         text-align: center;
     }
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width:576px) {
@@ -543,13 +555,15 @@
     .lh-188 {
         line-height: 188px;
     }
-    .gap-sm-55{
+
+    .gap-sm-55 {
         gap: 55px;
     }
+
     .lh-83 {
         line-height: 83.2px;
     }
-   
+
 
 }
 
@@ -569,6 +583,7 @@
     .text-80 {
         font-size: var(--fs-xl);
     }
+    
 
 }
 
@@ -598,10 +613,14 @@
     .text-80 {
         font-size: var(--fs-2xl);
     }
+
     .py-lg-90 {
         padding-top: 90px;
         padding-bottom: 90px;
     }
-    
+    .gap-lg-116 {
+        gap: 116px;
+    }
+
 
 }
