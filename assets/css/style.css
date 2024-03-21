@@ -26,6 +26,8 @@
     --fc-red: #FF1300;
     --fc-green: #00A106;
     --fc-darkred: #FF0000;
+   --fc-grey: #A59A90;
+
 
 
 
@@ -55,6 +57,9 @@
 .color-darkred {
     color: var(--fc-darkred);
 }
+.color-grey{
+    color: var(--fc-grey);
+}
 
 /* ==================== font-size================================== */
 .text-14 {
@@ -74,7 +79,7 @@
 }
 
 .text-36 {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
 }
 
 .text-72 {
@@ -457,9 +462,46 @@
 .gap-50 {
     gap: 50px;
 }
-.py-21{
+
+.py-21 {
     padding-top: 21px;
     padding-bottom: 21px;
+}
+
+.inner-shadow {
+    /* box-shadow: 2px 2px 1px 0px #FFFFFF52 inset; */
+    box-shadow: 2px 2px 4px 0px #00000040;
+
+}
+/* ============================================ team-slider ======================================== */
+.max-w-407{
+    max-width: 407px;
+}
+.max-w-570{
+    max-width: 57 0px;    
+}
+.padding-card-1{
+    padding-top: 40px;
+    padding-bottom: 67.5px;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.padding-card-2{
+    padding-top: 40px;
+    padding-bottom: 45px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.h-326{
+    min-height: 326px;
+    height: 100%;
+}
+.slider-bg-img{
+    background-image: url(../images/png/slider-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -542,7 +584,8 @@
     .text_center {
         text-align: center;
     }
-    .flex_wrap{
+
+    .flex_wrap {
         flex-wrap: wrap;
     }
 }
@@ -583,7 +626,11 @@
     .text-80 {
         font-size: var(--fs-xl);
     }
+    .text-36 {
+        font-size: var(--fs-md);
+    }
     
+
 
 }
 
@@ -618,8 +665,16 @@
         padding-top: 90px;
         padding-bottom: 90px;
     }
+
     .gap-lg-116 {
         gap: 116px;
+    }
+    .py-lg-88{
+        padding-top: 88px;
+        padding-bottom: 89px;
+    }
+    .text-36 {
+        font-size: var(--fs-lg);
     }
 
 
