@@ -24,6 +24,10 @@
     --fc-yellow: #FFD600;
     --fc-black: #000000;
     --fc-red: #FF1300;
+    --fc-green: #00A106;
+    --fc-darkred: #FF0000;
+
+
 
 }
 
@@ -42,6 +46,14 @@
 
 .color-red {
     color: var(--fc-red);
+}
+
+.color-green {
+    color: var(--fc-green);
+}
+
+.color-darkred {
+    color: var(--fc-darkred);
 }
 
 /* ==================== font-size================================== */
@@ -70,7 +82,7 @@
 }
 
 .text-80 {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-lg);
 }
 
 .text-157 {
@@ -126,7 +138,7 @@
 }
 
 .lh-83 {
-    line-height: 83.2px;
+    line-height: 40px;
 }
 
 /* =================== font weight ======================= */
@@ -299,7 +311,7 @@
     border-right: 2px solid var(--fc-black);
 }
 
-.py-86 {
+.py-lg-86 {
     padding-top: 86px;
     padding-bottom: 86px;
 }
@@ -307,40 +319,45 @@
 .max-w-570 {
     max-width: 570px;
 }
+
 /* ========================================= latest tweets ====================================== */
-.py-90{
-    padding-top: 90px;
-    padding-bottom: 90px;
+
+.gap-20 {
+    gap: 20px;
 }
-.gap-55{
-    gap: 55px;
-}
+
 /* ======================================= latest slider ========================================== */
-.gap-11{
+.gap-11 {
     gap: 11px;
 }
-.max-w-327{
+
+.max-w-327 {
     max-width: 327px;
 }
-.py-15{
+
+.py-15 {
     padding-top: 13px;
     padding-bottom: 15px;
 }
-.py-48{
+
+.py-48 {
     padding-top: 48px;
     padding-bottom: 48px;
 }
 
-.max-w-327{
+.max-w-327 {
     max-width: 327px;
 }
-.px-26{
+
+.px-26 {
     padding-left: 26px;
     padding-right: 26px;
 }
-.max-w-283{
+
+.max-w-283 {
     max-width: 283px;
 }
+
 .underline-2::after {
     content: '';
     position: absolute;
@@ -352,6 +369,7 @@
     transition: all 200ms linear;
     /* margin-bottom: 40px; */
 }
+
 .max-w-307 {
     max-width: 307px;
 }
@@ -363,54 +381,76 @@
 .border_left {
     border-left: 1px solid var(--fc-black);
 }
+
 /* ================================= minting================================= */
-.py-88{
-    padding-top: 88px;
-    padding-bottom: 88px;
+
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.max-w-438{
+
+.max-w-438 {
     max-width: 438px;
 }
-.py-44{
-    padding-top: 44px;
-    padding-bottom: 47px;
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.right-border{
-    border-right:2px solid var(--fc-black)
+
+.right-border {
+    border-right: 2px solid var(--fc-black)
 }
-.left-border{
+
+.left-border {
     border-left: 2px solid var(--fc-black);
 }
-.gap-48{
+
+.gap-48 {
     gap: 48px;
 }
-.outer-border{
+
+.outer-border {
     border: 2px solid var(--fc-black);
 }
-.max-w-238{
+
+.max-w-238 {
     max-width: 238px;
 }
-.gap-24{
+
+.gap-24 {
     gap: 24px;
 }
-.px-24{
+
+.px-24 {
     padding-left: 24px;
     padding-right: 24px;
 }
-.mint-btn{
+
+.mint-btn {
     border: 2px solid var(--fc-black);
     background: var(--fc-yellow);
     padding: 12px 16px;
 
 }
-.mt-35{
+
+.mt-35 {
     margin-top: 35px;
 }
-.btn-hover:hover{
-        background: var(--fc-black);
-        border: 2px solid var(--fc-yellow);
-        color: var(--fc-yellow);
-        transition: all 300ms linear;
+
+.btn-hover:hover {
+    background: var(--fc-black);
+    border: 2px solid var(--fc-yellow);
+    color: var(--fc-yellow);
+    transition: all 300ms linear;
+}
+
+.pt-36 {
+    padding-top: 36px;
+}
+
+.pl-25 {
+    padding-left: 25px;
 }
 
 
@@ -481,6 +521,18 @@
         position: relative;
         top: 0;
     }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .text_center {
+        text-align: center;
+    }
 }
 
 @media (min-width:576px) {
@@ -491,6 +543,13 @@
     .lh-188 {
         line-height: 188px;
     }
+    .gap-sm-55{
+        gap: 55px;
+    }
+    .lh-83 {
+        line-height: 83.2px;
+    }
+   
 
 }
 
@@ -507,20 +566,42 @@
         line-height: 101px;
     }
 
+    .text-80 {
+        font-size: var(--fs-xl);
+    }
+
 }
 
 @media (min-width:992px) {
- 
+    .py-lg-88 {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
 
     .text-157 {
         font-size: var(--fs-3xl);
     }
+
     .border-left {
         border-left: 2px solid var(--fc-black);
     }
-    
+
     .border-right {
         border-right: 2px solid var(--fc-black);
     }
+
+    .py-lg-44 {
+        padding-top: 44px;
+        padding-bottom: 47px;
+    }
+
+    .text-80 {
+        font-size: var(--fs-2xl);
+    }
+    .py-lg-90 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    
 
 }
