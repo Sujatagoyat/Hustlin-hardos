@@ -51,8 +51,8 @@ $('.responsive').slick({
   $('.responsive-2').slick({
     dots:false,
     infinite: true,
-    // autoplay:true,
-    autoplaySpeed:1000,
+    autoplay:true,
+    autoplaySpeed:2000,
     ltr:true,
     speed: 300,
     slidesToShow: 2,
