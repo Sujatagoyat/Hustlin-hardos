@@ -271,7 +271,7 @@
 }
 
 .border_bottom {
-    border-bottom: 2px solid var(--fc-black);
+    border-bottom: 2px solid var(--fc-black) !important;
 }
 
 .pt-68 {
@@ -596,7 +596,7 @@
     --bs-accordion-border-radius: 0 !important;
     --bs-accordion-bg: none !important;
     --bs-accordion-border-color: var(--fc-black) !important;
-    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-width: 0 !important;
 }
 
 .accordion-item:first-of-type {
