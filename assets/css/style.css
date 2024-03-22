@@ -585,7 +585,64 @@
     position: relative;
 }
 
-/* =========================================== FAQ section ================================================== */
+/* =========================================== FAQ accordion ================================================== */
+.accordion-button:not(.collapsed) {
+    color: var(--fc-black) !important;
+    background-color: transparent !important;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion {
+    --bs-accordion-border-radius: 0 !important;
+    --bs-accordion-bg: none !important;
+    --bs-accordion-border-color: var(--fc-black) !important;
+    --bs-accordion-border-width: var(--bs-border-width);
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+/* .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+} */
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/png/plus-sign.png) !important;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/png/minus-sign.png) !important;
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.accordion-button:focus {
+    /* z-index: 3; */
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media queries - Responsive timeline  */
