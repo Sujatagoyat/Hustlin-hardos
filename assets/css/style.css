@@ -465,10 +465,8 @@
     padding-bottom: 21px;
 }
 
-.inner-shadow {
-    /* box-shadow: 2px 2px 1px 0px #FFFFFF52 inset; */
-    box-shadow: 2px 2px 4px 0px #00000040;
-
+.text-shadow {
+    text-shadow: 5px 5px 10px #00000040;
 }
 
 /* ============================================ team-slider ======================================== */
@@ -506,10 +504,136 @@
     background-position: center;
 }
 
+/* ======================================== roadmap ============================================= */
+.max-w-495 {
+    max-width: 495px;
+}
+
+.pt-99 {
+    padding-top: 70px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--fc-black);
+    top: 79px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.t-container {
+    padding: 10px 55px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.t-container::after {
+    content: '';
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    right: -30px;
+    background-image: url(../images/png/timeline-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 6px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.right::after {
+    left: -30px;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+.arrow {
+    border: solid var(--fc-black);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(44deg);
+    width: 20px;
+    height: 20px;
+    left: 48.5%;
+    bottom: 0;
+    position: absolute;
+}
+
+/* The actual content */
+.content {
+    position: relative;
+}
+
+/* =========================================== FAQ section ================================================== */
 
 
+/* Media queries - Responsive timeline  */
+@media screen and (max-width: 600px) {
 
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
 
+    /* Full-width containers */
+    .t-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .t-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 3px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    .arrow {
+        border: solid var(--fc-black);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        transform: rotate(44deg);
+        width: 20px;
+        height: 20px;
+        left: 5%;
+        bottom: 0;
+        position: absolute;
+    }
+}
 
 @media (max-width:992px) {
 
@@ -647,6 +771,12 @@
         padding-right: 38px;
     }
 
+    .arrow {
+
+        left: 48.5%;
+
+    }
+
 
 
 }
@@ -694,6 +824,18 @@
 
     .text-36 {
         font-size: var(--fs-lg);
+    }
+
+    .arrow {
+        border: solid var(--fc-black);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        transform: rotate(44deg);
+        width: 20px;
+        height: 20px;
+        left: 49%;
+        bottom: 0;
+        position: absolute;
     }
 
 
