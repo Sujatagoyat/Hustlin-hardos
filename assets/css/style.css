@@ -205,7 +205,7 @@
 }
 
 
-.marquee {
+/* .marquee {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
@@ -216,6 +216,12 @@
     display: inline-block;
     padding-left: 100%;
     animation: marquee 15s linear infinite;
+} */
+.max-w-132{
+    max-width: 132px;
+}
+.w-100{
+    width: 100% !important;
 }
 
 /* .marquee2 span {
@@ -318,7 +324,7 @@
 
 /* ========================================== march 1 ======================================================= */
 .max-w-475 {
-    max-width: 475px;
+    max-width: 475px !important;
 }
 
 .underline::after {
@@ -387,11 +393,14 @@
 .max-w-283 {
     max-width: 283px;
 }
+.max-w-83{
+    max-width: 83px;
+}
 
 .underline-2::after {
     content: '';
     position: absolute;
-    width: 30%;
+    width: 100%;
     height: 1px;
     background: var(--fc-black);
     left: 0;
@@ -540,6 +549,9 @@
 .py-99 {
     padding-top: 70px;
     padding-bottom: 70px;
+}
+.pb-70{
+    padding-bottom: 70px !important;
 }
 
 .timeline {
