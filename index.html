@@ -83,7 +83,7 @@
                     <div class="d-flex gap-170 align-items-center justify-content-center">
                         <h1 class="fw-normal text-24 lh-29 color-black mb-0 d-lg-block d-none ">Hustlin' Hardos</h1>
                         <div class="d-flex align-items-center gap-18">
-                            <a href="https://discord.com/">
+                            <a href="https://discord.com/" target="_blank">
                                 <svg  class="nav-svg"  width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_34717_10757)">
@@ -98,7 +98,7 @@
                                     </defs>
                                 </svg>
                             </a>
-                            <a href="https://twitter.com/?lang=en">
+                            <a href="https://twitter.com/?lang=en" target="_blank">
                                 <svg class="nav-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -106,7 +106,7 @@
                                         fill="black" />
                                 </svg>
                             </a>
-                            <a href="https://www.instagram.com/">
+                            <a href="https://www.instagram.com/" target="_blank">
                                 <svg class="nav-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -146,7 +146,7 @@
         </section>
         <section class="border_bottom">
             <div class="my-container">
-                <nav class="d-flex align-items-center justify-content-lg-center justify-content-between">
+                <nav class="d-flex align-items-center justify-content-lg-center justify-content-between py-1">
                     <h1 class="fw-normal text-24 lh-29 color-black mb-0 d-block d-lg-none  ">Hustlin' Hardos</h1>
                     <ul class="d-flex align-items-center justify-content-lg-center mb-0 menulist ">
                         <li class="border-right border-left  pb-lg- 0 py-lg-2 py-4  ">
@@ -198,8 +198,8 @@
     <!-- =============================== march 1===================================================== -->
     <section class=" border_bottom">
         <div class="my-container">
-            <div class="row">
-                <div class="col-lg-6 border-left d-flex flex-column justify-content-center align-items-center">
+            <div class="row flex-lg-row flex-column-reverse">
+                <div class="col-lg-6 border-left d-flex flex-column justify-conten t-center align-items-center">
                     <div class=" py-lg-86 py-30">
                         <p class="fw-normal text-16 lh-22 ff-noto color-black">March 1, 2022 by Editor Hardo</p>
                         <p class="fw-normal text-18 lh-27 ff-noto color-black max-w-475">Hustlin' Hardos is a collection
@@ -211,8 +211,8 @@
                             holders first-of-its-kind utility. Your Huslin’ Hardo NFT is your gateway to The Boardroom,
                             one of the most rewarding and engaging online communities
                         </p>
-                        <div class="underline  position-relative cursor-pointer">
-                            <p class="fw-normal text-16 lh-22 ff-noto color-black max-w-475 mb-0">Read More...</p>
+                        <div class=" cursor-pointer">
+                            <p class="fw-normal text-16 lh-22 ff-noto color-black max-w_475 mb-0 underline  position-relative">Read More...</p>
                         </div>
 
                     </div>
@@ -230,8 +230,8 @@
             <div class="d-flex align-items-center justify-content-between">
                 <h1 class="font-light text-80 lh-83 ff-perpetua color-black py-lg-90 py-30">Latest Tweets</h1>
                 <div class="d-flex gap-sm-55 gap-20 ">
-                    <img src="./assets/images/svg/prev-img.svg" alt="prev-img.svg">
-                    <img src="./assets/images/png/next-img.png" alt="next-img.png">
+                    <img class="pre cursor-pointer" src="./assets/images/svg/prev-img.svg" alt="prev-img.svg">
+                    <img class="nex cursor-pointer" src="./assets/images/png/next-img.png" alt="next-img.png">
                 </div>
             </div>
         </div>
@@ -374,14 +374,14 @@
     <!-- ================================ minting section ================================================== -->
     <section class="border_bottom" id="Minting">
         <div class="my-container">
-            <h1 class="fw-normal text-80 lh-83 ff-noto color-black py-lg-88 py-30 mb-0 text_center">Minting</h1>
+            <h1 class="fw-normal text-80 lh-83 ff-noto color-black py-lg-88 py-30 mb-0 ">Minting</h1>
         </div>
     </section>
     <!-- ====================================== minting-2=============================== -->
     <section class=" border_bottom" >
         <div class="my-container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 border-left d-flex flex-column justify-center align-center">
+            <div class="row justify-content -center flex-lg-row flex-column-reverse">
+                <div class="col-lg-6 border-left d-flex flex-column justify- center align -center">
                     <div class=" py-lg-44 py-20 pl-25">
                         <p class="fw-normal text-16 lh-22 ff-noto color-black max-w-438 pb-3">Most of the Hustlin’ Hardos
                             first experienced NFTs via other successful projects like NBA TopShot, where revealing your
@@ -392,18 +392,23 @@
                             by web3.</p>
                         <div class="outer-border max-w-238">
                             <div class="d-flex align-items-center gap-24 justify-content-center">
+                                <div id="minusbtn">
                                 <svg width="11" height="4" viewBox="0 0 11 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.9 3.864V0.516H10.26V3.864H0.9Z" fill="black" />
                                 </svg>
-                                <p class="fw-semibold text-36 lh-49 ff-noto color-black mb-0 right-border left-border px-24">100</p>
+                            </div>
+                                <p id="counting" class="fw-semibold text-36 lh-49 ff-noto color-black mb-0 right-border left-border px-24">100</p>
+                                <div id="addbtn">
                                 <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.82 15.852V9.336H0.34V6.924H6.82V0.407999H9.268V6.924H15.784V9.336H9.268V15.852H6.82Z" fill="black"/>
                                     </svg>
+                                </div>
                             </div>
                         </div> 
                         <button class="fw-semibold text-14 lh-20 ff-noto color-black mint-btn cursor-pointer mt-35 btn-hover">Mint NOW</button>
                         <p class="fw-semibold text-18 lh-25 ff-noto color-green pt-36 mb-0">Time Left</p> 
-                        <p class="fw-semibold text-36 lh-49 ff-noto color-darkred">40:15:12:10</p>                      
+                        <!-- <p id="timer"></p> -->
+                        <p class="fw-semibold text-36 lh-49 ff-noto color-darkred" id="clock">40:15:12:10</p>                      
                     </div>
                 </div>
                 <div class="col-lg-6  d-flex  justify-center align-center ">
@@ -507,7 +512,7 @@
                                 <p class="fw-normal text-16 lh-22 ff-noto color-black max-w-495">Building a wardrobe app where you can secondary sales </p>
                               </div>
                         </div>
-                        <i class="arrow"></i>
+                        <i class="arrow d-lg-block d-none"></i>
                     </div>
                   </div>
             </div>
@@ -519,8 +524,8 @@
             <div class="d-flex align-items-center justify-content-between py-lg-88 py-30">
                 <h1 class="fw-normal text-80 lh-83 ff-noto color-black text-shadow">Team</h1>
                 <div class="d-flex gap-sm-55 gap-20 ">
-                    <img src="./assets/images/svg/prev-img.svg" alt="prev-img.svg">
-                    <img src="./assets/images/png/next-img.png" alt="next-img.png">
+                    <img class="prev cursor-pointer" src="./assets/images/svg/prev-img.svg" alt="prev-img.svg">
+                    <img class="next cursor-pointer" src="./assets/images/png/next-img.png" alt="next-img.png">
                 </div>
             </div>
         </div>

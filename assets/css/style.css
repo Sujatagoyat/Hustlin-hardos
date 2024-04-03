@@ -72,7 +72,7 @@
 }
 
 .text-24 {
-    font-size: var(--fs-md);
+    font-size: var(--fs-md) !important;
 }
 
 .text-36 {
@@ -333,9 +333,7 @@ ul {
 }
 
 /* ========================================== march 1 ======================================================= */
-.max-w-475 {
-    max-width: 475px !important;
-}
+
 
 .underline::after {
     content: '';
@@ -362,9 +360,7 @@ ul {
     padding-bottom: 86px;
 }
 
-.max-w-570 {
-    max-width: 570px;
-}
+
 
 /* ========================================= latest tweets ====================================== */
 
@@ -438,9 +434,7 @@ ul {
     padding-bottom: 30px;
 }
 
-.max-w-438 {
-    max-width: 438px;
-}
+
 
 .py-20 {
     padding-top: 20px;
@@ -498,9 +492,7 @@ ul {
     padding-top: 36px;
 }
 
-.pl-25 {
-    padding-left: 25px;
-}
+
 
 /* ======================================== section ============================================ */
 .gap-50 {
@@ -549,6 +541,9 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.slick-next:before {
+    content: ''!important;
 }
 
 /* ======================================== roadmap ============================================= */
@@ -626,7 +621,7 @@ ul {
     transform: rotate(44deg);
     width: 20px;
     height: 20px;
-    left: 48.5%;
+    left: 49%;
     bottom: 0;
     position: absolute;
 }
@@ -664,15 +659,19 @@ ul {
     width: var(--bs-accordion-btn-icon-width);
     height: var(--bs-accordion-btn-icon-width);
     margin-left: auto;
-    content: "";
-    background-image: url(../images/png/plus-sign.png) !important;
+    content: "+" !important;
+    color: var(--fc-black);
+    background-image: none !important;
+    height: 33px !important;
+    width: 14px !important;
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../images/png/minus-sign.png) !important;
+    content: "-" !important;
+    background-image: none;
     transform: var(--bs-accordion-btn-icon-transform);
 }
 
@@ -712,7 +711,9 @@ ul {
 .right_border{
     border-right:2px solid  var(--fc-black);
 }
-
+.max-w_475{
+    max-width: 475px;
+}
 
 
 
@@ -727,7 +728,7 @@ ul {
 
 
 /* Media queries - Responsive timeline  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     /* Place the timelime to the left */
     .timeline::after {
@@ -760,17 +761,7 @@ ul {
         left: 0%;
     }
 
-    .arrow {
-        border: solid var(--fc-black);
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        transform: rotate(44deg);
-        width: 20px;
-        height: 20px;
-        left: 5%;
-        bottom: 0;
-        position: absolute;
-    }
+   
 }
 
 @media (max-width:992px) {
@@ -782,6 +773,10 @@ ul {
     ul.menulist.show {
         right: 0;
     }
+    .menuIcon.show>span{
+        top: -80px !important;
+        position: relative !important;
+    }
 
     .menuIcon {
         width: 30px;
@@ -792,6 +787,8 @@ ul {
         position: relative;
         z-index: 5;
         transition: all 300ms linear;
+        /* padding-top: 4px;
+        padding-bottom: 4px; */
     }
 
     .menuIcon>span {
@@ -818,7 +815,7 @@ ul {
     }
 
     .cross span:nth-child(1) {
-        transform: rotate(51deg) translateY(26px);
+        transform: rotate(59deg) translateY(25px);
         transition: all 300ms linear;
         position: relative;
         top: -7px;
@@ -831,7 +828,7 @@ ul {
     }
 
     .cross span:nth-child(3) {
-        transform: rotate(-52deg) translateY(-27px);
+        transform: rotate(-60deg) translateY(-26px);
         transition: all 300ms linear;
         position: relative;
         top: 0;
@@ -870,6 +867,17 @@ ul {
     .lh-83 {
         line-height: 83.2px;
     }
+    /* .arrow {
+        border: solid var(--fc-black);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        transform: rotate(44deg);
+        width: 20px;
+        height: 20px;
+        left: 5%;
+        bottom: 0;
+        position: absolute;
+    } */
 
 
 }
@@ -909,11 +917,11 @@ ul {
         padding-right: 38px;
     }
 
-    .arrow {
+    /* .arrow {
 
         left: 48.5%;
 
-    }
+    } */
 
 
 
@@ -964,7 +972,7 @@ ul {
         font-size: var(--fs-lg);
     }
 
-    .arrow {
+    /* .arrow {
         border: solid var(--fc-black);
         border-width: 0 2px 2px 0;
         display: inline-block;
@@ -974,10 +982,22 @@ ul {
         left: 49%;
         bottom: 0;
         position: absolute;
-    }
+    } */
     .py-lg-32{
         padding-top: 32px;
         padding-bottom: 24px;
+    }
+    .max-w-438 {
+        max-width: 438px;
+    }
+    .max-w-570 {
+        max-width: 570px;
+    }
+    .max-w-475 {
+        max-width: 475px !important;
+    }
+    .pl-25 {
+        padding-left: 25px;
     }
 
 
