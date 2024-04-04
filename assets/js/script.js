@@ -122,44 +122,24 @@ topBtn.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
 })
 
-// // Calling showTime function at every second
-setInterval(showTime, 1000);
-
-// Defining showTime funcion
-function showTime() {
-    // Getting current time and date
-    let time = new Date();
-    let hour = time.getHours();
-    let min = time.getMinutes();
-    let sec = time.getSeconds();
-    // am_pm = "AM";
-
-    // Setting time for 12 Hrs format
-    if (hour >= 24) {
-        if (hour > 24) hour -= 24;
-        // am_pm = "PM";
-    } else if (hour == 0) {
-        hr = 12;
-        // am_pm = "AM";
+const timeData = document.querySelector(".time");
+function countdownTimer(timeString) {
+  let [days, hours, minutes, seconds] = timeString.split(":").map(Number);
+  let totalSeconds =
+    days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds;
+  const interval = setInterval(() => {
+    if (totalSeconds <= 0) {
+      clearInterval(interval);
+      alert("Timer has ended");
+      return;
     }
-
-    hour =
-        hour < 10 ? "0" + hour : hour;
-    min = min < 10 ? "0" + min : min;
-    sec = sec < 10 ? "0" + sec : sec;
-
-    let currentTime =
-        hour +
-        ":" +
-        min +
-        ":" +
-        sec +
-        am_pm;
-
-    // Displaying the time
-    document.getElementById(
-        "clock"
-    ).innerHTML = currentTime;
+    days = Math.floor(totalSeconds / (24 * 60 * 60));
+    hours = Math.floor((totalSeconds % (24 * 60 * 60)) / (60 * 60));
+    minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+    seconds = totalSeconds % 60;
+    const timeLeft = `${days}:${hours}:${minutes}:${seconds}`;
+    timeData.innerHTML = timeLeft;
+    totalSeconds--;
+  }, 1000);
 }
-
-showTime();
+countdownTimer("40:15:12:10");
